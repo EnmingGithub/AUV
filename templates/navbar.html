@@ -14,16 +14,16 @@
     <!-- Menu items -->
     <div class="collapse navbar-collapse" id="mainNavBar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
         {% if request.user.is_authenticated %}
-          <li><a href="{% url 'courses' %}"><span class="glyphicon glyphicon-education"></span> Courses</a></li>
+          <li><a href="{% url 'courses' %}"><span class="glyphicon glyphicon-education"></span> 培训课程</a></li>
         {% else %}
-          <li><a href="/"><span class="glyphicon glyphicon-education"></span> Courses</a></li>
+          <li><a href="/"><span class="glyphicon glyphicon-education"></span> 培训课程</a></li>
         {% endif %}
-        <li><a href="{% url 'about' %}"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
-        <li><a href="{% url 'contact' %}"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
+        <li><a href="{% url 'about' %}"><span class="glyphicon glyphicon-info-sign"></span> 关于</a></li>
+        <li><a href="{% url 'contact' %}"><span class="glyphicon glyphicon-earphone"></span> 联系</a></li>
         {% if request.user.is_authenticated %}
-          <li><a href="{% url 'forum' %}"><span class="glyphicon glyphicon glyphicon-comment"></span> Forum</a></li>
+          <li><a href="{% url 'forum' %}"><span class="glyphicon glyphicon glyphicon-comment"></span> 问题汇总</a></li>
         {% endif %}
       </ul>
 
@@ -32,10 +32,10 @@
         {% if request.user.is_authenticated %}
           <li><a href="{% url 'profile' %}"><span class="glyphicon glyphicon-user"></span> {{ user.get_username }}</a>
           </li>
-          <li><a href="/accounts/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+          <li><a href="/accounts/logout"><span class="glyphicon glyphicon-log-out"></span> 注销</a></li>
         {% else %}
-          <li><a href="/accounts/register"><span class="glyphicon glyphicon-plus"></span> Sign Up</a></li>
-          <li><a href="/accounts/login"><span class="glyphicon glyphicon-user"></span> Log In</a></li>
+          <li><a href="/accounts/register"><span class="glyphicon glyphicon-plus"></span> 注册</a></li>
+          <li><a href="/accounts/login"><span class="glyphicon glyphicon-user"></span> 登陆</a></li>
         {% endif %}
       </ul>
     </div>

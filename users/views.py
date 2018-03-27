@@ -44,8 +44,7 @@ def contact(request):
         message = contact_form.cleaned_data.get("message")
         message = 'Sender:  ' + sender + '\nFrom:  ' + from_email + '\n\n' + message
         send_mail(subject, message, settings.EMAIL_HOST_USER, [settings.EMAIL_HOST_USER], fail_silently=True)
-        success_message = "We appreciate you contacting us, one of our Customer Service colleagues will get back" \
-                          " to you within a 24 hours."
+        success_message = "我们很感谢您与我们联系，我们的工作人员会在24小时之内尽快与您联系" 
         messages.success(request, success_message)
 
         return redirect(reverse('contact'))
@@ -74,7 +73,7 @@ def admin(request):
         queryset = queryset.filter(username__icontains=search)
 
     context = {
-        "title": "Admin",
+        "title": "管理员",
         "add_user_form": add_user_form,
         "queryset": queryset,
 
@@ -97,7 +96,7 @@ def professor(request):
     queryset_course = Course.objects.filter(user__username=request.user)
 
     context = {
-        "title": "Professor",
+        "title": "教练",
         "add_course_form": add_course_form,
         "queryset_course": queryset_course,
     }
@@ -173,7 +172,7 @@ def course_homepage(request, course_name):
         return redirect(reverse(student_course, kwargs={'course_name': course_name,
                                                         "slug": chapter_list[0].slug}))
     else:
-        warning_message = "Currently there are no chapters for this course "
+        warning_message = "本课程目前没有章节 "
         messages.warning(request, warning_message)
         return redirect(reverse('courses'))
 
