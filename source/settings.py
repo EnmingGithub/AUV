@@ -164,9 +164,15 @@ SITE_ID = 1
 # Config for sending mail from our official e-mail address
 # Check source/settings_sensitive_template.txt for more info
 
-settings_sensitive = BASE_DIR + '/source/settings_sensitive.py'
-if os.path.isfile(settings_sensitive):
-    from settings_sensitive import *
+#settings_sensitive = BASE_DIR + '/source/settings_sensitive.py'
+#if os.path.isfile(settings_sensitive):
+#    from settings_sensitive import *
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'mail.auvskydiving.com'
+EMAIL_HOST_USER = 'info'
+EMAIL_HOST_PASSWORD = 'Jumpjump2018'
+EMAIL_PORT = 25
+
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
