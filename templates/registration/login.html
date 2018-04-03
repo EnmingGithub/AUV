@@ -14,12 +14,12 @@
   {% else %}
     <div class='row login'>
       <div class='col-sm-4 col-sm-offset-4'>
-        <h1>Login</h1>
+        <h1>登入</h1>
         <form method="post" action=".">
           {% csrf_token %}
           {{ form|crispy }}
 
-          <input class='btn btn-block btn-primary' type="submit" value="{% trans 'Submit' %}"/>
+          <input class='btn btn-block btn-primary' type="submit" value="{% trans '提交' %}"/>
           <input type="hidden" name="next" value="{{ next }}"/>
         </form>
       </div>
@@ -27,8 +27,8 @@
     <hr/>
     <div class='row form-opt'>
       <div class='col-sm-4 col-sm-offset-4 text-align-center'>
-        <p>{% trans "Forgot password" %}? <a href="{% url 'auth_password_reset' %}">{% trans "Reset it" %}</a>!</p>
-        <p>{% trans "Not member" %}? <a href="{% url 'registration_register' %}">{% trans "Register" %}</a>!</p>
+        <p>{% trans "忘记密码" %}? <a href="{% url 'auth_password_reset' %}">{% trans "重置" %}</a>!</p>
+        <p>{% trans "非会员" %}? <a href="{% url 'registration_register' %}">{% trans "注册" %}</a>!</p>
       </div>
     </div>
   {% endif %}

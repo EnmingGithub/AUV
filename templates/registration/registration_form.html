@@ -13,12 +13,12 @@
   {% else %}
   <div class='row'>
     <div class='col-xs-12 col-sm-4 col-sm-offset-4 registration'>
-      <h1>Register for free!</h1>
+      <h1>免费注册！</h1>
       <form method="post" action=".">
         {% csrf_token %}
         {{ form|crispy }}
 
-        <input class='btn btn-block btn-primary' type="submit" value="{% trans 'Join' %}"/>
+        <input class='btn btn-block btn-primary' type="submit" value="{% trans '加入' %}"/>
       </form>
     </div>
   </div>
