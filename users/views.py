@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 from courses.forms import AddCourseForm
 from courses.models import *
 from .forms import *
