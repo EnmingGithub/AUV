@@ -114,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-CN'
 
 TIME_ZONE = 'UTC'
 
@@ -169,7 +169,7 @@ SITE_ID = 1
 #    from settings_sensitive import *
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'mail.auvskydiving.com'
-EMAIL_HOST_USER = 'info'
+EMAIL_HOST_USER = 'jojo'
 EMAIL_HOST_PASSWORD = 'Jumpjump2018'
 EMAIL_PORT = 25
 
