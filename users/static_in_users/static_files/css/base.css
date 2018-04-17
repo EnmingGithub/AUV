@@ -2,7 +2,7 @@ html,
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 100%;
-    background-color: #F6F6F6;
+    background-color: #ffffff;
     height: 100%;
     /* The html and body elements cannot have any padding or margin. */
 }
@@ -12,22 +12,24 @@ body {
     min-height: 100%;
     height: auto;
     /* Negative indent footer by its height */
-    margin: 0 auto -30px;
+    margin: 0 auto 0px;
     /* Pad bottom by footer height */
-    padding: 0 0 30px;
+    padding: 0 0 0px;
 }
 
 /* Set the fixed height of the footer here */
 #footer {
-    height: 30px;
-    background-color: #637f83;
+	background: url(../img/skyline.png) no-repeat 0 0;
+    background-size: contain;
+    height: 160px;
+    background-color: #000000;
     text-align: center;
     color: white;
-    margin-top: 2em;
+    margin-top:2em;
 }
 
 #footer > .container {
-    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 
