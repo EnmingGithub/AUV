@@ -20,13 +20,13 @@ body {
 
 /* Set the fixed height of the footer here */
 #footer {
+	width: 100%;
+	position:absolute;
 	background: url(../img/footer.png) no-repeat 0 0;
     background-size: contain;
+    background-position: center;
     height: 60px;
     background-color: #000000;
-    text-align: center;
-    color: white;
-    margin-top:2em;
 }
 
 #footer > .container {
