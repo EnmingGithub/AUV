@@ -51,8 +51,7 @@ body {margin:0;}
         {% else %}
           <li><a href="/"></span> 培训课程</a></li>
         {% endif %}
-        <li><a href="{% url 'about' %}"></span> 关于</a></li>
-        <li><a href="{% url 'contact' %}"></span> 联系</a></li>
+
         {% if request.user.is_authenticated %}
           <li><a href="{% url 'forum' %}"></span> 问题汇总</a></li>
         {% endif %}
