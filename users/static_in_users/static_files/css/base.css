@@ -9,6 +9,7 @@ body {
 
 /* Wrapper for page content to push down footer */
 #wrap {
+	overflow: hidden;
     min-height: 100%;
     height: auto;
     /* Negative indent footer by its height */
@@ -19,9 +20,9 @@ body {
 
 /* Set the fixed height of the footer here */
 #footer {
-	background: url(../img/skyline.png) no-repeat 0 0;
+	background: url(../img/footer.png) no-repeat 0 0;
     background-size: contain;
-    height: 160px;
+    height: 60px;
     background-color: #000000;
     text-align: center;
     color: white;
