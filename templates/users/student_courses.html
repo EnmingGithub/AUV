@@ -41,9 +41,19 @@
                 {{ item.lesson|safe }}
               </div>
             {% else %}
-              <div class="course-inner-content">
-                <a href='{{ item.file.url }}'>{{ item.file }}</a>
-              </div>
+              {% if '.png' in item.file.url or '.jpg' in item.file.url or '.JPG' in item.file.url or '.PNG' in item.file.url  %}
+                <div class="course-inner-content">
+                  <img src="{{ item.file.url }}" alt="Click to Download" width="640" />
+                </div>
+              {% endif %}
+              {% if '.mp4' in item.file.url %}
+                <div class="course-inner-content">
+                  <video width="640" controls>
+                    <source src="{{ item.file.url }}" type="video/mp4">
+                    Your browser does not support the video tag. :(
+                  </video>
+                </div>
+              {% endif %}
             {% endif %}
           {% endfor %}
         {% endif %}
