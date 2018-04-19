@@ -29,9 +29,11 @@
 }
 
 .inner-middle {
-    background: url(../img/course-box.jpg) no-repeat 0 0;
+    text-align: center;
+    /*background: url(../img/course-box.jpg) no-repeat 0 0;*/
     background-size: contain;
     min-height: 100px;
+    max-height: 320px;
 }
 
 .inner-bottom {

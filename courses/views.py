@@ -3,6 +3,7 @@ from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import user_passes_test, login_required
 from .forms import *
 
+from pprint import pprint
 
 @login_required
 def courses(request):
@@ -15,6 +16,12 @@ def courses(request):
         "title": "Courses",
         "queryset": queryset,
     }
+
+    # edit course image here
+    for entry in queryset:
+        entry.img_url = "http://chicagowind.com/2016/0715/U297P5054T2D8358F52DT20160715165143.JPG"
+        if "jojo" in entry.course_name:
+            entry.img_url = "https://www.skyleague.com/images/uploads/teams/photo_WM2010_ChinaFemale.jpg"
 
     return render(request, "users/course.html", context)
 
