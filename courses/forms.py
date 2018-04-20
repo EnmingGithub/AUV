@@ -11,7 +11,7 @@ class AddCourseForm(forms.ModelForm):
     def clean_course_name(self):
         course_name = self.cleaned_data.get('course_name')
 
-        regexp = re.compile(r'[0-9a-zA-Z ]')
+        regexp = re.compile(r'...')
         if not regexp.match(course_name):
             raise forms.ValidationError("Please make sure course name contains (a-z, A-Z, 0-9, space) characters")
 
@@ -25,7 +25,7 @@ class AddChapterForm(forms.ModelForm):
 
     def clean_chapter_name(self):
         chapter_name = self.cleaned_data.get('chapter_name')
-        regexp = re.compile(r'[0-9a-zA-Z ]')
+        regexp = re.compile(r'...')
 
         if not regexp.match(chapter_name):
             raise forms.ValidationError("Please make sure chapter name contains (a-z, A-Z, 0-9, space) characters")
