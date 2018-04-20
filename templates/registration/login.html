@@ -9,11 +9,15 @@
   <!-- Using this because of django redux registration which contains built-in validation. -->
   {% if request.user.is_authenticated %}
     <script>
-      window.location.replace("http://127.0.0.1:8000");
+      window.location.replace("http://52.14.20.127:8000");
     </script>
   {% else %}
     <div class='row login'>
       <div class='col-sm-4 col-sm-offset-4'>
+      <br />
+<br />
+<br />
+<br />
         <h1>登入</h1>
         <form method="post" action=".">
           {% csrf_token %}

@@ -10,7 +10,7 @@
       <ul class="breadcrumb breadcrumb__t">
 
         <li>
-          <a href="/">Home&nbsp</a>
+          <a href="/">首页&nbsp</a>
           {% if  path  != None %}
             {% url 'forum' as forum_url %}
             {% if request.get_full_path != forum_url %}
@@ -21,7 +21,7 @@
 
         {% url 'student_course' course_name slug as student_course_url %}
         {% if request.get_full_path ==  student_course_url %}
-          <li><a href="{% url 'courses' %}">Courses</a></li>
+          <li><a href="{% url 'courses' %}">课程</a></li>
         {% endif %}
 
         {% url 'chapter' course_name slug as chapter_url %}
