@@ -169,9 +169,10 @@ SITE_ID = 1
 #    from settings_sensitive import *
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'mail.auvskydiving.com'
-EMAIL_HOST_USER = 'jojo'
+EMAIL_HOST_USER = 'info'
 EMAIL_HOST_PASSWORD = 'Jumpjump2018'
 EMAIL_PORT = 25
+DEFAULT_FROM_EMAIL = 'Dont Reply <do_not_reply@auvskydiving.com>'
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
