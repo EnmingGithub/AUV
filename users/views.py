@@ -137,7 +137,7 @@ def update_user(request, username):
     path = path.title()
 
     context = {
-        "title": "Edit",
+        "title": "编辑",
         "update_user_form": update_user_form,
         "path": path,
         "redirect_path": redirect_path,
