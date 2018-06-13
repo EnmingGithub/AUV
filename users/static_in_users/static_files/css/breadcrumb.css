@@ -1,6 +1,6 @@
 /*--breadcrumb--*/
 .bread-h {
-    background: #637f83;
+    background: #ffffff;
     margin-bottom: 25px;
 }
 
@@ -9,14 +9,14 @@
 }
 
 .title-section {
-    background: #fafffe;
+    background: #ffffff;
     position: relative;
-    border-bottom: 1px solid #fafff8;
+    border-bottom: 1px solid #ffffff;
 }
 
 .title-section h1 {
-    margin: 0 0 5px 0;
-    line-height: 58px;
+    margin: 0 0 0 0;
+    line-height: 120px;
     font-size: 40px;
     font-weight: bold;
     color: #fff;
@@ -27,7 +27,7 @@
     position: relative;
     margin: 0;
     padding: 9px 0 10px 0;
-    border-top: 1px solid #597275;
+    border-top: 1px solid #ffffff;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
@@ -40,9 +40,9 @@
 }
 
 .title-section ul li a {
-    color: #fff;
+    color: #000000;
 }
 
 .breadcrumb > .active {
-    color: #9eb3b6;
+    color: #000000;
 }

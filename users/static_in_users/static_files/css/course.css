@@ -6,14 +6,15 @@
     -moz-box-shadow: 8px 8px 8px #637F83;
     -webkit-box-shadow: 8px 8px 8px #637F83;
     box-shadow: 8px 8px 8px #637F83;
-    background-color: #637F83;
+    background-color: #ed0002;
 }
 
 .inner-top {
-    padding-top: 5px;
+    padding-top: 25px;
     padding-bottom: 5px;
     color: #fff;
-    background: #637F83;
+    font-size: 25px;
+    background: #000000;
     text-align: center;
     text-transform: capitalize;
     font-weight: bolder;
