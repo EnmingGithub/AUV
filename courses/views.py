@@ -23,29 +23,29 @@ def courses(request):
     # edit course image here
     for entry in queryset:
         entry.img_url = "http://52.14.20.127:8000/media/1.jpg"
-        if "跳伞的历史和发展" in entry.course_name:
+        if "01" in entry.course_name:
             entry.img_url = "http://52.14.20.127:8000/media/1.jpg"
-        if "课程目的" in entry.course_name:
+        if "02" in entry.course_name:
             entry.img_url = "http://52.14.20.127:8000/media/2.jpg"
-        if "FAQ" in entry.course_name:
+        if "03" in entry.course_name:
             entry.img_url = "http://52.14.20.127:8000/media/3.jpg"
-        if "跳伞执照" in entry.course_name:
+        if "04" in entry.course_name:
             entry.img_url = "http://52.14.20.127:8000/media/4.jpg"
-        if "了解你的跳伞基地" in entry.course_name:
+        if "05" in entry.course_name:
             entry.img_url = "http://52.14.20.127:8000/media/5.jpg"
-        if "了解你的跳伞时长" in entry.course_name:
+        if "06" in entry.course_name:
             entry.img_url = "http://52.14.20.127:8000/media/6.jpg"
-        if "了解你的跳伞服务" in entry.course_name:
+        if "07" in entry.course_name:
             entry.img_url = "http://52.14.20.127:8000/media/7.jpg"
-        if "了解你的教练" in entry.course_name:
+        if "08" in entry.course_name:
             entry.img_url = "http://52.14.20.127:8000/media/8.jpg"
-        if "了解你的装备" in entry.course_name:
+        if "09" in entry.course_name:
             entry.img_url = "http://52.14.20.127:8000/media/9.jpg"
-        if "飞机" in entry.course_name:
+        if "10" in entry.course_name:
             entry.img_url = "http://52.14.20.127:8000/media/10.jpg"
-        if "自由落体" in entry.course_name:
+        if "11" in entry.course_name:
             entry.img_url = "http://52.14.20.127:8000/media/11.jpg"
-        if "着陆" in entry.course_name:
+        if "12" in entry.course_name:
             entry.img_url = "http://52.14.20.127:8000/media/12.jpg"
 
     return render(request, "users/course.html", context)
