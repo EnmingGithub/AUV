@@ -11,7 +11,7 @@ class AddNewTopic(forms.ModelForm):
     def clean_subject(self):
         topic_name = self.cleaned_data.get('subject')
 
-        regexp = re.compile(r'[0-9a-zA-Z!.? ]')
+        regexp = re.compile(r'...')
         if not regexp.match(topic_name):
             raise forms.ValidationError(
                 "Please make sure topic name contains (a-z, A-Z, 0-9, !.?' ') characters")
