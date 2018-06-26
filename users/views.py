@@ -18,7 +18,7 @@ from django.http import Http404
 
 def home(request):
     context = {
-        "title": "eLearning",
+        "title": "AUVS Online Course",
     }
 
     return render(request, "home.html", context)
