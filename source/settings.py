@@ -172,7 +172,7 @@ EMAIL_HOST = 'mail.auvskydiving.com'
 EMAIL_HOST_USER = 'info'
 EMAIL_HOST_PASSWORD = 'Jumpjump2018'
 EMAIL_PORT = 25
-DEFAULT_FROM_EMAIL = '网络课堂激活连接 <do_not_reply@auvskydiving.com>'
+DEFAULT_FROM_EMAIL = 'Don`t reply <do_not_reply@auvskydiving.com>'
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
