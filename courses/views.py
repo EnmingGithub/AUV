@@ -22,31 +22,31 @@ def courses(request):
 
     # edit course image here
     for entry in queryset:
-        entry.img_url = "http://52.14.20.127:8000/media/1.jpg"
+        entry.img_url = "http://course.auvskydiving.com/media/1.jpg"
         if "01" in entry.course_name:
-            entry.img_url = "http://52.14.20.127:8000/media/1.jpg"
+            entry.img_url = "http://course.auvskydiving.com/media/1.jpg"
         if "02" in entry.course_name:
-            entry.img_url = "http://52.14.20.127:8000/media/2.jpg"
+            entry.img_url = "http://course.auvskydiving.com/media/2.jpg"
         if "03" in entry.course_name:
-            entry.img_url = "http://52.14.20.127:8000/media/3.jpg"
+            entry.img_url = "http://course.auvskydiving.com/media/3.jpg"
         if "04" in entry.course_name:
-            entry.img_url = "http://52.14.20.127:8000/media/4.jpg"
+            entry.img_url = "http://course.auvskydiving.com/media/4.jpg"
         if "05" in entry.course_name:
-            entry.img_url = "http://52.14.20.127:8000/media/5.jpg"
+            entry.img_url = "http://course.auvskydiving.com/media/5.jpg"
         if "06" in entry.course_name:
-            entry.img_url = "http://52.14.20.127:8000/media/6.jpg"
+            entry.img_url = "http://course.auvskydiving.com/media/6.jpg"
         if "07" in entry.course_name:
-            entry.img_url = "http://52.14.20.127:8000/media/7.jpg"
+            entry.img_url = "http://course.auvskydiving.com/media/7.jpg"
         if "08" in entry.course_name:
-            entry.img_url = "http://52.14.20.127:8000/media/8.jpg"
+            entry.img_url = "http://course.auvskydiving.com/media/8.jpg"
         if "09" in entry.course_name:
-            entry.img_url = "http://52.14.20.127:8000/media/9.jpg"
+            entry.img_url = "http://course.auvskydiving.com/media/9.jpg"
         if "10" in entry.course_name:
-            entry.img_url = "http://52.14.20.127:8000/media/10.jpg"
+            entry.img_url = "http://course.auvskydiving.com/media/10.jpg"
         if "11" in entry.course_name:
-            entry.img_url = "http://52.14.20.127:8000/media/11.jpg"
+            entry.img_url = "http://course.auvskydiving.com/media/11.jpg"
         if "12" in entry.course_name:
-            entry.img_url = "http://52.14.20.127:8000/media/12.jpg"
+            entry.img_url = "http://course.auvskydiving.com/media/12.jpg"
 
     return render(request, "users/course.html", context)
 
