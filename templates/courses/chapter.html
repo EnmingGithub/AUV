@@ -84,7 +84,7 @@
           {% for instance in queryset_yt_link %}
             <tr>
               <td class="col-md-8">{{ instance.link }}</td>
-              <video autoplay width="320" height="240" controls>
+              <video style="display:block; margin: 0 auto;" autoplay width="320" height="240" controls controlsList="nodownload">
                 <source src="/videos/output.mp4" type="video/mp4" >
               <td class="col-md-2">{{ instance.date_created }}</td>
               <td class="col-md-2">
