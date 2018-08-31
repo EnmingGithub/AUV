@@ -9,7 +9,7 @@
   <!-- Using this because of django redux registration which contains built-in validation. -->
   {% if request.user.is_authenticated %}
     <script>
-      window.location.replace("http://52.14.20.127:8000");
+      window.location.replace("http://course.auvskydiving.com");
     </script>
   {% else %}
     <div class='row login'>
@@ -31,8 +31,8 @@
     <hr/>
     <div class='row form-opt'>
       <div class='col-sm-4 col-sm-offset-4 text-align-center'>
-        <p>{% trans "忘记密码" %}? <a href="{% url 'auth_password_reset' %}">{% trans "重置" %}</a>!</p>
-        <p>{% trans "非会员" %}? <a href="{% url 'registration_register' %}">{% trans "注册" %}</a>!</p>
+        <p>{% trans "忘记密码" %}? <a href="{% url 'auth_password_reset' %}">{% trans "重置" %}</a></p>
+        <p>{% trans "非会员" %}? <a href="{% url 'registration_register' %}">{% trans "注册" %}</a></p>
       </div>
     </div>
   {% endif %}
